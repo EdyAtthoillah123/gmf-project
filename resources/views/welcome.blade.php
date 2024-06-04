@@ -102,8 +102,9 @@
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <div class="rounded-xl shadow-lg bg-white">
                     <div class="p-5 flex flex-col items-center">
-                        <div class="rounded-full overflow-hidden mt-8 w-32 h-32 flex items-center justify-center">
-                            <img class="w-full h-full object-cover" src="{{ asset('images/landingpage/layanan1.png') }}"
+                        <div
+                            class="rounded-full overflow-hidden mt-8 w-20 h-20 flex items-center justify-center shadow-md">
+                            <img class="w-13 h-13 object-cover" src="{{ asset('images/landingpage/service1.png') }}"
                                 alt="">
                         </div>
                         <p class="title2 text-dgreen mt-6 font-bold">Kemitraan Domba
@@ -116,8 +117,9 @@
                 </div>
                 <div class="rounded-xl shadow-lg  bg-white">
                     <div class="p-5 flex flex-col items-center">
-                        <div class="rounded-full overflow-hidden mt-8 w-32 h-32 flex items-center justify-center">
-                            <img class="w-full h-full object-cover" src="{{ asset('images/landingpage/layanan2.png') }}"
+                        <div
+                            class="rounded-full overflow-hidden mt-8 w-20 h-20 flex items-center justify-center shadow-md">
+                            <img class="w-13 h-13 object-cover" src="{{ asset('images/landingpage/service2.png') }}"
                                 alt="">
                         </div>
                         <p class="title2 text-dgreen mt-6 font-bold">Domba Pejantan & Indukan
@@ -129,8 +131,9 @@
                 </div>
                 <div class="rounded-xl shadow-lg  bg-white">
                     <div class="p-5 flex flex-col items-center">
-                        <div class="rounded-full overflow-hidden mt-8 w-32 h-32 flex items-center justify-center">
-                            <img class="w-full h-full object-cover" src="{{ asset('images/landingpage/layanan3.png') }}"
+                        <div
+                            class="rounded-full overflow-hidden mt-8 w-20 h-20 flex items-center justify-center shadow-md">
+                            <img class="w-13 h-13 object-cover" src="{{ asset('images/landingpage/service3.png') }}"
                                 alt="">
                         </div>
                         <p class="title2 text-dgreen mt-6 font-bold">Pengadaan Bahan Baku
@@ -142,8 +145,9 @@
                 </div>
                 <div class="rounded-xl shadow-lg  bg-white">
                     <div class="p-5 flex flex-col items-center ">
-                        <div class="rounded-full overflow-hidden mt-8 w-32 h-32 flex items-center justify-center">
-                            <img class="w-full h-full object-cover" src="{{ asset('images/landingpage/layanan4.png') }}"
+                        <div
+                            class="rounded-full overflow-hidden mt-8 w-20 h-20 flex items-center justify-center shadow-md">
+                            <img class="w-13 h-13 object-cover" src="{{ asset('images/landingpage/service4.png') }}"
                                 alt="">
                         </div>
                         <p class="title2 text-dgreen mt-6 font-bold">Produksi Pakan Ternak
@@ -191,7 +195,8 @@
                     </div>
                     <div class="border-t border-gray-300"></div>
                     <div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4">
-                        <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}" alt="Profile Picture">
+                        <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}"
+                            alt="Profile Picture">
                         <div>
                             <div class="text-body font-bold text-black">Santoso Budi</div>
                             <p class="text-body text-grey">Peternak uang</p>
@@ -211,13 +216,15 @@
                     </div>
                     <div class="border-t border-gray-300"></div>
                     <div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4">
-                        <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}" alt="Profile Picture">
+                        <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}"
+                            alt="Profile Picture">
                         <div>
                             <div class="text-body font-bold text-black">Santoso Budi</div>
                             <p class="text-body text-grey">Peternak uang</p>
                         </div>
                     </div>
-                </div> <div class="rounded-xl shadow-lg bg-white">
+                </div>
+                <div class="rounded-xl shadow-lg bg-white">
                     <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt=""></div>
                     <div class="p-6 flex flex-col items-center">
                         <p class="text-body">
@@ -230,7 +237,8 @@
                     </div>
                     <div class="border-t border-gray-300"></div>
                     <div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4">
-                        <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}" alt="Profile Picture">
+                        <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}"
+                            alt="Profile Picture">
                         <div>
                             <div class="text-body font-bold text-black">Santoso Budi</div>
                             <p class="text-body text-grey">Peternak uang</p>
@@ -241,6 +249,243 @@
         </div>
     </section>
 
+    <section id="" class="py-16 relative">
+        <div class="container mx-auto relative z-10">
+            <div class="flex-1 flex items-center">
+                <div class="text-center mx-auto">
+                    <h1 class="text-h2 font-bold  xl:text-h1 text-dgreen">Blog</h1>
+                    <h1 class="text-h2 font-bold  xl:text-h1 text-dgreen">Gumukmas Multifarm</h1>
+                </div>
+            </div>
+        </div>
+        <!-- New Layout Section -->
+        <div class="container mx-auto mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Kotak 1 dan Kotak 2 digabung -->
+                <div class="md:col-span-2 bg-white p-4 rounded shadow h-3/5">
+                    <div class="flex flex-row space-x-4 h-full overflow-x-auto no-scrollbar" id="scroll-container">
+                        <!-- Testimonial 1 -->
+                        <div class="rounded-xl shadow-lg bg-white flex-shrink-0 w-72">
+                            <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt=""></div>
+                            <div class="p-6 flex flex-col items-center">
+                                <p class="text-body">
+                                    Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
+                                    masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari GMF,
+                                    saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain itu,
+                                    layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
+                                    pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat untuk
+                                    kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
+                                </p>
+                            </div>
+                            <div class="border-t border-gray-300"></div>
+                            <div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4">
+                                <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}" alt="Profile Picture">
+                                <div>
+                                    <div class="text-body font-bold text-black">Santoso Budi</div>
+                                    <p class="text-body text-grey">Peternak uang</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="rounded-xl shadow-lg bg-white flex-shrink-0 w-72">
+                            <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt=""></div>
+                            <div class="p-6 flex flex-col items-center">
+                                <p class="text-body">
+                                    Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
+                                    masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari GMF,
+                                    saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain itu,
+                                    layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
+                                    pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat untuk
+                                    kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
+                                </p>
+                            </div>
+                            <div class="border-t border-gray-300"></div>
+                            <div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4">
+                                <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}" alt="Profile Picture">
+                                <div>
+                                    <div class="text-body font-bold text-black">Santoso Budi</div>
+                                    <p class="text-body text-grey">Peternak uang</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="rounded-xl shadow-lg bg-white flex-shrink-0 w-72">
+                            <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt=""></div>
+                            <div class="p-6 flex flex-col items-center">
+                                <p class="text-body">
+                                    Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
+                                    masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari GMF,
+                                    saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain itu,
+                                    layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
+                                    pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat untuk
+                                    kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
+                                </p>
+                            </div>
+                            <div class="border-t border-gray-300"></div>
+                            <div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4">
+                                <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}" alt="Profile Picture">
+                                <div>
+                                    <div class="text-body font-bold text-black">Santoso Budi</div>
+                                    <p class="text-body text-grey">Peternak uang</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="rounded-xl shadow-lg bg-white flex-shrink-0 w-72">
+                            <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt=""></div>
+                            <div class="p-6 flex flex-col items-center">
+                                <p class="text-body">
+                                    Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
+                                    masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari GMF,
+                                    saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain itu,
+                                    layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
+                                    pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat untuk
+                                    kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
+                                </p>
+                            </div>
+                            <div class="border-t border-gray-300"></div>
+                            <div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4">
+                                <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}" alt="Profile Picture">
+                                <div>
+                                    <div class="text-body font-bold text-black">Santoso Budi</div>
+                                    <p class="text-body text-grey">Peternak uang</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="rounded-xl shadow-lg bg-white flex-shrink-0 w-72">
+                            <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt=""></div>
+                            <div class="p-6 flex flex-col items-center">
+                                <p class="text-body">
+                                    Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
+                                    masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari GMF,
+                                    saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain itu,
+                                    layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
+                                    pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat untuk
+                                    kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
+                                </p>
+                            </div>
+                            <div class="border-t border-gray-300"></div>
+                            <div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4">
+                                <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}" alt="Profile Picture">
+                                <div>
+                                    <div class="text-body font-bold text-black">Santoso Budi</div>
+                                    <p class="text-body text-grey">Peternak uang</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="rounded-xl shadow-lg bg-white flex-shrink-0 w-72">
+                            <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt=""></div>
+                            <div class="p-6 flex flex-col items-center">
+                                <p class="text-body">
+                                    Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
+                                    masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari GMF,
+                                    saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain itu,
+                                    layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
+                                    pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat untuk
+                                    kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
+                                </p>
+                            </div>
+                            <div class="border-t border-gray-300"></div>
+                            <div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4">
+                                <img class="w-13 h-13 rounded-full" src="{{ asset('images/landingpage/profile.png') }}" alt="Profile Picture">
+                                <div>
+                                    <div class="text-body font-bold text-black">Santoso Budi</div>
+                                    <p class="text-body text-grey">Peternak uang</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tambahkan lebih banyak testimonial di sini -->
+                    </div>
+                </div>
+                <!-- Kotak 3 -->
+                <div class="bg-white p-4 rounded shadow flex flex-col overflow-y-auto h-3/5 no-scrollbar" id="scroll-container">
+                    <div class="rounded-xl shadow-lg bg-white flex-shrink-0 w-full mt-4">
+                        <div class="p-6 flex flex-col items-center">
+                            <p class="text-body">
+                                Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
+                                masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari GMF,
+                                saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain itu,
+                                layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
+                                pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat untuk
+                                kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl shadow-lg bg-white flex-shrink-0 w-full mt-4">
+                        <div class="p-6 flex flex-col items-center">
+                            <p class="text-body">
+                                Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
+                                masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari GMF,
+                                saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain itu,
+                                layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
+                                pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat untuk
+                                kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl shadow-lg bg-white flex-shrink-0 w-full mt-4">
+                        <div class="p-6 flex flex-col items-center">
+                            <p class="text-body">
+                                Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
+                                masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari GMF,
+                                saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain itu,
+                                layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
+                                pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat untuk
+                                kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl shadow-lg bg-white flex-shrink-0 w-full mt-4">
+                        <div class="p-6 flex flex-col items-center">
+                            <p class="text-body">
+                                Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
+                                masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari GMF,
+                                saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain itu,
+                                layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
+                                pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat untuk
+                                kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+<script>
+    const scrollContainer = document.getElementById('scroll-container');
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    scrollContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        scrollContainer.classList.add('active');
+        startX = e.pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
+    });
+
+    scrollContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        scrollContainer.classList.remove('active');
+    });
+
+    scrollContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        scrollContainer.classList.remove('active');
+    });
+
+    scrollContainer.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 3; // scroll-fast
+        scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+</script>
     {{-- End Service section --}}
     @livewire('components.about')
     @vite('resources/js/app.js')

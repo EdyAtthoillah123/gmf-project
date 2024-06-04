@@ -1,5 +1,6 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
+import plugin from 'tailwindcss/plugin';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -37,13 +38,25 @@ export default {
                 'caption': '11px',
             },
             screens: {
-                '2xl': '1440px'
+                '2xl': '1440px',
             }
         },
     },
 
     plugins: [
         forms,
-        require('flowbite/plugin')
+        require('flowbite/plugin'),
+        plugin(function({ addUtilities }) {
+            const newUtilities = {
+                '.no-scrollbar': {
+                    '-ms-overflow-style': 'none',  // IE dan Edge
+                    'scrollbar-width': 'none',     // Firefox
+                },
+                '.no-scrollbar::-webkit-scrollbar': {
+                    'display': 'none',             // Chrome, Safari, dan Opera
+                },
+            }
+            addUtilities(newUtilities)
+        }),
     ],
 };
