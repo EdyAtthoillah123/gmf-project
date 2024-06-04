@@ -39,6 +39,13 @@ export default {
             },
             screens: {
                 '2xl': '1440px',
+            },
+            width: {
+                '91': '364px',
+                '188' : '752px',
+            },
+            height: {
+                '130' : '520px',
             }
         },
     },
