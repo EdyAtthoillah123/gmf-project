@@ -33,7 +33,6 @@ export default {
                 'h5': '23px',
                 'title1': '19px',
                 'title2': '16px',
-                'title3': '8px',
                 'body': '13px',
                 'caption': '11px',
             },
@@ -55,12 +54,8 @@ export default {
         require('flowbite/plugin'),
         plugin(function({ addUtilities }) {
             const newUtilities = {
-                '.no-scrollbar': {
-                    '-ms-overflow-style': 'none',  // IE dan Edge
-                    'scrollbar-width': 'none',     // Firefox
-                },
-                '.no-scrollbar::-webkit-scrollbar': {
-                    'display': 'none',             // Chrome, Safari, dan Opera
+                '.shadow-br': {
+                    boxShadow: '1px 1px rgba(0, 0, 0, 0.1)', 
                 },
             }
             addUtilities(newUtilities)

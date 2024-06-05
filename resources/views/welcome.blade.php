@@ -183,7 +183,8 @@
         <div class="container flex items-center p-12 justify-center mx-auto relative z-20">
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
                 <div class="rounded-xl shadow-lg bg-white">
-                    <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt=""></div>
+                    <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt="">
+                    </div>
                     <div class="p-6 flex flex-col items-center">
                         <p class="text-body">
                             Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
@@ -204,7 +205,8 @@
                     </div>
                 </div>
                 <div class="rounded-xl shadow-lg bg-white">
-                    <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt=""></div>
+                    <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt="">
+                    </div>
                     <div class="p-6 flex flex-col items-center">
                         <p class="text-body">
                             Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
@@ -225,7 +227,8 @@
                     </div>
                 </div>
                 <div class="rounded-xl shadow-lg bg-white">
-                    <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt=""></div>
+                    <div class="mt-7 ml-6"><img src="{{ asset('images/landingpage/quote.png') }}" alt="">
+                    </div>
                     <div class="p-6 flex flex-col items-center">
                         <p class="text-body">
                             Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering mengalami
@@ -251,113 +254,102 @@
 
     <section id="" class="py-16 relative">
         <div class="container mx-auto relative z-10">
-            <div class="flex-1 flex items-center">
-                <div class="text-center mx-auto">
-                    <h1 class="text-h2 font-bold  xl:text-h1 text-dgreen">Blog</h1>
-                    <h1 class="text-h2 font-bold  xl:text-h1 text-dgreen">Gumukmas Multifarm</h1>
+            <div class="flex items-center justify-center">
+                <div class="text-center">
+                    <h1 class="text-h2 font-bold xl:text-h1 text-dgreen">Blog</h1>
+                    <h1 class="text-h2 font-bold xl:text-h1 text-dgreen">Gumukmas Multifarm</h1>
                 </div>
             </div>
         </div>
         <!-- New Layout Section -->
-        <div class="container mx-auto mt-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="md:col-span-2 flex flex-col md:flex-row space-y-4 md:space-x-4 md:space-y-0 h-130">
-                    <a href="https://www.youtube.com/watch?v=5Gm0ect1qnA&pp=ygUJYXNlZGUga29u">
-                        <div class="rounded-xl shadow-sm w-91">
-                            <div class="rounded-xl overflow-hidden">
-                                <div class=""><img
-                                        src="{{ asset('images/blog/pexels-dmytro-mamon-256046-977239 1.png') }}" alt="">
-                                </div>
-                            </div>
-                            <div class=" flex flex-col">
-                                <div class="flex mt-6">
-                                    <img src="{{ asset('images/blog/clock.png') }}" class="w-4 h-4">
-                                    <p class="text-body flex px-2">
-                                        16 Mei 2024
-                                    </p>
-                                </div>
-                                <p class="text-title2 font-bold mt-6">CARA CEPAT PEMBIBITAN DOMBA DENGAN
-                                    MODEL LOOSE HOUSING</p>
-                                <p class="text-body mt-4">
-                                    GMF telah menjadi mitra yang luar biasa bagi usaha peternakan saya. Dukungan dan
-                                    kualitas ternak yang mereka berikan sungguh luar biasa.
-                                </p>
-                                <div class="flex items-center mt-8">
-                                    <a href="" class="text-title2 font-bold underline">Baca Selengkapnya</a>
-                                    <img src="{{ asset('images/blog/arrow.png') }}" class="w-5 h-4 ml-2" alt="">
-                                </div>
-
-                            </div>
+        <div class="container mx-auto mt-12">
+            <div class="flex flex-col md:flex-row md:space-x-4">
+                <div class="flex-1 mb-8 md:mb-0">
+                    <a href="#">
+                        <div class="rounded-xl shadow-sm overflow-hidden">
+                            <img src="{{ asset('images/blog/pexels-dmytro-mamon-256046-977239 1.png') }}" alt="" class="w-full">
                         </div>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=5Gm0ect1qnA&pp=ygUJYXNlZGUga29u">
-                        <div class="rounded-xl shadow-sm w-91">
-                            <div class="rounded-xl overflow-hidden">
-                                <div class=""><img
-                                        src="{{ asset('images/blog/pexels-dmytro-mamon-256046-977239 1.png') }}" alt="">
-                                </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-6">
+                                <img src="{{ asset('images/blog/clock.png') }}" class="w-4 h-4">
+                                <p class="text-body flex px-2">16 Mei 2024</p>
                             </div>
-                            <div class=" flex flex-col">
-                                <div class="flex mt-6">
-                                    <img src="{{ asset('images/blog/clock.png') }}" class="w-4 h-4">
-                                    <p class="text-body flex px-2">
-                                        16 Mei 2024
-                                    </p>
-                                </div>
-                                <p class="text-title2 font-bold mt-6">CARA CEPAT PEMBIBITAN DOMBA DENGAN
-                                    MODEL LOOSE HOUSING</p>
-                                <p class="text-body mt-4">
-                                    GMF telah menjadi mitra yang luar biasa bagi usaha peternakan saya. Dukungan dan
-                                    kualitas ternak yang mereka berikan sungguh luar biasa.
-                                </p>
-                                <div class="flex items-center mt-8">
-                                    <a href="" class="text-title2 font-bold underline">Baca Selengkapnya</a>
-                                    <img src="{{ asset('images/blog/arrow.png') }}" class="w-5 h-4 ml-2" alt="">
-                                </div>
-
+                            <p class="text-title2 font-bold mb-6">CARA CEPAT PEMBIBITAN DOMBA DENGAN MODEL LOOSE HOUSING</p>
+                            <p class="text-body mb-8">GMF telah menjadi mitra yang luar biasa bagi usaha peternakan saya. Dukungan dan kualitas ternak yang mereka berikan sungguh luar biasa.</p>
+                            <div class="flex items-center">
+                                <a href="" class="text-title2 font-bold underline">Baca Selengkapnya</a>
+                                <img src="{{ asset('images/blog/arrow.png') }}" class="w-5 h-4 ml-2" alt="">
                             </div>
                         </div>
                     </a>
                 </div>
-
-                <div class="bg-white flex-col h-130">
-                    <div class="rounded-xl mb-3 shadow-lg bg-white flex-shrink-0 w-full">
-                        <div class="flex flex-col items-center">
-                            <p class="text-body">
-                                Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering
-                                mengalami
-                                masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari
-                                GMF,
-                                saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain
-                                itu,
-                                layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
-                                pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat
-                                untuk
-                                kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
-                            </p>
+                <div class="flex-1 mb-8 md:mb-0">
+                    <a href="#">
+                        <div class="rounded-xl shadow-sm overflow-hidden">
+                            <img src="{{ asset('images/blog/pexels-dmytro-mamon-256046-977239 1.png') }}" alt="" class="w-full">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-6">
+                                <img src="{{ asset('images/blog/clock.png') }}" class="w-4 h-4">
+                                <p class="text-body flex px-2">16 Mei 2024</p>
+                            </div>
+                            <p class="text-title2 font-bold mb-6">CARA CEPAT PEMBIBITAN DOMBA DENGAN MODEL LOOSE HOUSING</p>
+                            <p class="text-body mb-8">GMF telah menjadi mitra yang luar biasa bagi usaha peternakan saya. Dukungan dan kualitas ternak yang mereka berikan sungguh luar biasa.</p>
+                            <div class="flex items-center">
+                                <a href="" class="text-title2 font-bold underline">Baca Selengkapnya</a>
+                                <img src="{{ asset('images/blog/arrow.png') }}" class="w-5 h-4 ml-2" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-1 mb-8 md:mb-0">
+                    <!-- Artikel Pertama -->
+                    <div class="rounded-xl mb-6 shadow-lg bg-transparent flex-shrink-0 w-full">
+                        <div class="flex flex-row items-center">
+                            <img src="{{ asset('images/blog/pexels-katlovessteve-678451 1.png') }}" class="rounded-xl w-32 h-28" alt="">
+                            <div class="mx-3">
+                                <div class="flex items-center">
+                                    <img src="{{ asset('images/blog/clock.png') }}" class="w-4 h-4">
+                                    <p class="text-body flex px-2">16 Mei 2024</p>
+                                </div>
+                                <p class="text-body font-bold mt-2">ATASI VIRUS PMK DENGAN DESINFEKSI DAN SANITASI KANDANG SECARA RUTIN</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="rounded-xl shadow-lg bg-white flex-shrink-0 w-full">
-                        <div class="flex flex-col items-center">
-                            <p class="text-body">
-                                Saya sangat puas dengan pakan ternak dari GMF. Sebelum mengenal GMF, saya sering
-                                mengalami
-                                masalah dengan kualitas pakan yang tidak konsisten. Namun, sejak menggunakan pakan dari
-                                GMF,
-                                saya melihat perubahan signifikan pada kesehatan dan produktivitas ternak saya. Selain
-                                itu,
-                                layanan pengiriman mereka selalu tepat waktu, sehingga saya tidak pernah kekurangan stok
-                                pakan. Tim GMF juga selalu siap memberikan saran mengenai formulasi pakan yang tepat
-                                untuk
-                                kebutuhan ternak saya. Layanan pelanggan mereka sangat responsif dan ramah.
-                            </p>
+                
+                    <!-- Artikel Kedua -->
+                    <div class="rounded-xl mb-6 shadow-lg bg-transparent flex-shrink-0 w-full">
+                        <div class="flex flex-row items-center">
+                            <img src="{{ asset('images/blog/pexels-katlovessteve-678451 1.png') }}" class="rounded-xl w-32 h-28" alt="">
+                            <div class="mx-3">
+                                <div class="flex items-center">
+                                    <img src="{{ asset('images/blog/clock.png') }}" class="w-4 h-4">
+                                    <p class="text-body flex px-2">16 Mei 2024</p>
+                                </div>
+                                <p class="text-body font-bold mt-2">ATASI VIRUS PMK DENGAN DESINFEKSI DAN SANITASI KANDANG SECARA RUTIN</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Artikel Ketiga -->
+                    <div class="rounded-xl mb-6 shadow-lg bg-transparent flex-shrink-0 w-full">
+                        <div class="flex flex-row items-center">
+                            <img src="{{ asset('images/blog/pexels-katlovessteve-678451 1.png') }}" class="rounded-xl w-32 h-28" alt="">
+                            <div class="mx-3">
+                                <div class="flex items-center">
+                                    <img src="{{ asset('images/blog/clock.png') }}" class="w-4 h-4">
+                                    <p class="text-body flex px-2">16 Mei 2024</p>
+                                </div>
+                                <p class="text-body font-bold mt-2">ATASI VIRUS PMK DENGAN DESINFEKSI DAN SANITASI KANDANG SECARA RUTIN</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
+                
             </div>
         </div>
     </section>
+    
     {{-- End Service section --}}
     @livewire('components.about')
     @vite('resources/js/app.js')
