@@ -30,15 +30,11 @@
             <div class="mx-auto p-4 md:py-8">
                 <div class="flex-1 flex items-center">
                     <div class="text-center mx-auto">
-                        <h1 class="text-h3 font-bold text-white md:text-h2 lg:text-h1">Selamat Datang di</h1>
+                        <h1 class="text-h3 font-bold text-white md:text-h2 lg:text-h1">{{ __('messages.welcome') }}</h1>
                         <h1 class="text-h3 font-bold text-white md:text-h2 lg:text-h1">Gumukmas Multifarm (GMF)</h1>
-                        <p class="text-title2 text-text mb-7">Kemitraan Domba dan Produksi Pakan Ternak Terbaik di
-                            Jember,
-                            Jawa
-                            Timur, Indonesia</p>
+                        <p class="text-title2 text-text mb-7">{{ __('messages.caption') }}</p>
                         <a href="#"
-                            class="py-3 px-9 bg-orange text-title2 text-lwhite rounded-xl hover:bg-orange/80">Mulai
-                            Bermitra</a>
+                            class="py-3 px-9 bg-orange text-title2 text-lwhite rounded-xl hover:bg-orange/80">{{ __('messages.start') }}</a>
                     </div>
                 </div>
             </div>

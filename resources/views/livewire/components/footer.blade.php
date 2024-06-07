@@ -2,7 +2,7 @@
     <div class="container w-full ">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Column 1 -->
-            <div class="flex flex-col items-center md:items-start">
+            <div class="flex flex-col items-start">
                 <img src="{{ asset('images/footer/logo.png') }}" class="w-24 h-24  mt-14 mb-6" alt="Image 1">
                 <p class="text-white text-title2 mb-6">Gumukmas Multifarm (GMF) adalah perusahaan yang berfokus pada
                     kemitraan
@@ -19,57 +19,62 @@
                     <a href="https://www.facebook.com/" target="_blank" class="text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                             <path
-                                d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .733.592 1.324 1.325 1.324h11.489v-9.294h-3.128v-3.622h3.128v-2.672c0-3.1 1.894-4.787 4.659-4.787 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.714-1.795 1.76v2.315h3.587l-.467 3.622h-3.12v9.293h6.116c.733 0 1.325-.592 1.325-1.324v-21.35c0-.733-.592-1.325-1.325-1.325z" />
+                                d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
                         </svg>
                     </a>
-                    <!-- Twitter Icon -->
+                    <!-- X Icon -->
                     <a href="https://www.twitter.com/" target="_blank" class="text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                             <path
-                                d="M24 4.557c-.883.392-1.83.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .39.043.765.127 1.124-4.086-.205-7.713-2.163-10.141-5.138-.424.727-.667 1.571-.667 2.475 0 1.708.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.062c0 2.385 1.698 4.374 3.95 4.828-.413.111-.849.171-1.296.171-.317 0-.626-.03-.927-.088.626 1.956 2.444 3.379 4.6 3.42-1.685 1.32-3.809 2.107-6.115 2.107-.397 0-.79-.023-1.175-.069 2.179 1.396 4.768 2.21 7.557 2.21 9.054 0 14.002-7.496 14.002-13.986 0-.213-.005-.425-.014-.637.961-.695 1.8-1.562 2.462-2.549z" />
+                                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
                         </svg>
                     </a>
                     <!-- YouTube Icon -->
                     <a href="https://www.youtube.com/" target="_blank" class="text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                             <path
-                                d="M23.498 6.186c-.278-1.049-1.09-1.87-2.131-2.153-1.878-.5-9.367-.5-9.367-.5s-7.49 0-9.367.5c-1.041.283-1.853 1.104-2.131 2.153-.5 1.881-.5 5.811-.5 5.811s0 3.93.5 5.811c.278 1.049 1.09 1.87 2.131 2.153 1.878.5 9.367.5 9.367.5s7.49 0 9.367-.5c1.041-.283 1.853-1.104 2.131-2.153.5-1.881.5-5.811.5-5.811s0-3.93-.5-5.811zm-14.498 8.137v-6.647l6.496 3.323-6.496 3.324z" />
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                         </svg>
                     </a>
                 </div>
-                <p class="text-white text-title2 mb-8">© 2024 Gumukmas Multifarm</p>
+                <div class="w-full flex justify-center md:justify-start">
+                    <p class="text-white text-title2 mb-8">© 2024 Gumukmas Multifarm</p>
+                </div>                
             </div>
             <!-- Column 2 -->
-            <div class="flex flex-row md:flex-col items-center md:items-start mx-auto">
-                <p class="text-white text-title2 font-bold md:mt-14 md:mb-8 mb-6 mr-6 ">Tautan Langsung</p>
-                <ul class="flex flex-row md:flex-col">
-                    <li class="text-white text-title2 mb-6 mr-6"><a href="http://">Beranda</a></li>
-                    <li class="text-white text-title2 mb-6 mr-6 "><a href="http://">Tentang</a></li>
-                    <li class="text-white text-title2 mb-6 mr-6"><a href="http://">Layanan</a></li>
-                    <li class="text-white text-title2 mb-6 mr-6"><a href="http://">Blog</a></li>
-                </ul>
+            <div class="flex w-full flex-col items-center md:items-center mx-auto">
+                <p class="text-white text-title2 font-bold md:mt-14 md:mb-8 mb-6">Tautan Langsung</p>
+                <div class=" w-full items-start  ">
+                    <ul class="flex flex-col md:items-center">
+                        <li class="text-white text-title2 mb-6 mr-6"><a href="http://">Beranda</a></li>
+                        <li class="text-white text-title2 mb-6 mr-6 "><a href="http://">Tentang</a></li>
+                        <li class="text-white text-title2 mb-6 mr-6"><a href="http://">Layanan</a></li>
+                        <li class="text-white text-title2 mb-6 mr-6"><a href="http://">Blog</a></li>
+                    </ul>
+                </div>
             </div>
             <!-- Column 3 -->
             <div class="flex flex-col items-center md:items-start">
                 <p class="text-white text-title2 font-bold md:mt-14 md:mb-8 mb-6">Informasi Kontak</p>
-                <ul class="">
+                <ul>
                     <!-- Alamat dengan Ikon Maps -->
-                    <li class="text-white text-title2 mb-6 flex items-center">
+                    <li class="text-white text-title2 mb-6 flex items-start">
                         <!-- Image Maps -->
-                        <img src="{{ asset('images/footer/maps.png') }}" class="h-4 w-4 mr-2" alt="Maps Icon">
+                        <img src="{{ asset('images/footer/maps.png') }}" class="h-4 w-4 mr-2 mt-1 align-self-center"
+                            alt="Maps Icon">
                         <a href="http://">Jalan Sultan Agung No. 42, Dusun Krajan, Desa Purwosari, Kec. Gumukmas, Kab.
                             Jember, Jawa Timur, 68165</a>
                     </li>
-            
+
                     <!-- Nomor Telepon 1 dengan Ikon Telepon -->
                     <li class="text-white text-title2 mb-6 flex items-center">
                         <!-- Image Telepon -->
                         <img src="{{ asset('images/footer/phone.png') }}" class="h-4 w-4 mr-2" alt="Phone Icon">
                         <a href="tel:085233212596">085233212596</a>
                     </li>
-            
+
                     <!-- Nomor Telepon 2 dengan Ikon Telepon -->
-                    <li class="text-white text-title2 mb-6 flex items-center">
+                    <li class="text-white text-title2 mb-12 flex items-center">
                         <!-- Image Telepon -->
                         <img src="{{ asset('images/footer/phone.png') }}" class="h-4 w-4 mr-2" alt="Phone Icon">
                         <a href="tel:082334277476">082334277476</a>
@@ -77,7 +82,7 @@
                 </ul>
                 {{-- @livewire('components.buttontranslate') --}}
             </div>
-            
+
         </div>
     </div>
 </footer>
