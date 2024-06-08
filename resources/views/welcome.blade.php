@@ -269,12 +269,12 @@
     </section>
     {{-- End Section Testimonial --}}
 
-    <section id="" class="py-16 relative">
+    <section id="blog" class="py-16 relative">
         <div class="container mx-auto relative z-10">
             <div class="flex items-center justify-center">
                 <div class="text-center">
-                    <h1 class="text-h2 font-bold xl:text-h1 text-dgreen">Blog</h1>
-                    <h1 class="text-h2 font-bold xl:text-h1 text-dgreen">Gumukmas Multifarm</h1>
+                    <h1 class="text-h3 font-bold xl:text-h2 text-dgreen">Blog</h1>
+                    <h1 class="text-h3 font-bold xl:text-h2 text-dgreen">Gumukmas Multifarm</h1>
                 </div>
             </div>
         </div>
