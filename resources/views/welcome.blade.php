@@ -30,15 +30,11 @@
             <div class="mx-auto p-4 md:py-8">
                 <div class="flex-1 flex items-center">
                     <div class="text-center mx-auto">
-                        <h1 class="text-h3 font-bold text-white md:text-h2 lg:text-h1">Selamat Datang di</h1>
+                        <h1 class="text-h3 font-bold text-white md:text-h2 lg:text-h1">{{ __('messages.welcome') }}</h1>
                         <h1 class="text-h3 font-bold text-white md:text-h2 lg:text-h1">Gumukmas Multifarm (GMF)</h1>
-                        <p class="text-title2 text-text mb-7">Kemitraan Domba dan Produksi Pakan Ternak Terbaik di
-                            Jember,
-                            Jawa
-                            Timur, Indonesia</p>
+                        <p class="text-title2 text-text mb-7">{{ __('messages.caption') }}</p>
                         <a href="#"
-                            class="py-3 px-9 bg-orange text-title2 text-lwhite rounded-xl hover:bg-orange/80">Mulai
-                            Bermitra</a>
+                            class="py-3 px-9 bg-orange text-title2 text-lwhite rounded-xl hover:bg-orange/80">{{ __('messages.start') }}</a>
                     </div>
                 </div>
             </div>
@@ -55,18 +51,12 @@
                         class="max-w-full h-auto object-cover">
                 </div>
                 <div class="order-1 mb-16 md:order-2 w-full md:w-3/5 md:pl-4">
-                    <h2 class="text-h3 text-dgreen font-bold mb-4 xl:text-h2">Tentang Kami</h2>
+                    <h2 class="text-h3 text-dgreen font-bold mb-4 xl:text-h2">{{ __('messages.aboutsection') }}</h2>
                     <p class="text-body text-tblack leading-relaxed mb-12 xl:text-title2">
-                        Gumukmas Multifarm (GMF) adalah perusahaan yang berkomitmen untuk meningkatkan kualitas dan
-                        produktivitas peternakan di Indonesia. Kami fokus pada kemitraan domba serta penyediaan pakan
-                        ternak
-                        ruminansia berkualitas tinggi. Berlokasi di Jember, Jawa Timur, kami siap mendukung peternak
-                        lokal
-                        dengan layanan terbaik dan terpercaya.
+                        {{ __('messages.aboutdesciption') }}
                     </p>
                     <a href="#"
-                        class="py-3 px-9 mb-8 bg-orange text-title2 text-lwhite rounded-xl hover:bg-orange/80">Mulai
-                        Bermitra</a>
+                        class="py-3 px-9 mb-8 bg-orange text-title2 text-lwhite rounded-xl hover:bg-orange/80">{{ __('messages.start') }}</a>
                 </div>
             </div>
         </div>
@@ -78,19 +68,13 @@
         <div class="container mx-auto relative z-10">
             <div class="flex flex-col md:flex-row items-center sm:px-4">
                 <div class="w-full md:w-1/2 order-1 mt-4">
-                    <h2 class="text-h3 text-dgreen font-bold mr-4 mb-4 xl:text-h2">Layanan Gumukmas Multifarm (GMF)</h2>
-                    <p class="text-body font-bold text-orange mb-6 leading-relaxed xl:text-title2">Apa saja layanan yang
-                        kami sediakan?
+                    <h2 class="text-h3 text-dgreen font-bold mr-4 mb-4 xl:text-h2">{{ __('messages.servicesection') }} Multifarm (GMF)</h2>
+                    <p class="text-body font-bold text-orange mb-6 leading-relaxed xl:text-title2">{{ __('messages.servicewhy') }}
                     </p>
                 </div>
                 <div class="w-full md:w-1/2 order-2">
                     <p class="text-body text-tblack leading-relaxed md:text-lwhite md:pl-8 xl:text-title2">
-                        Kami menawarkan berbagai layanan yang dirancang untuk mendukung
-                        kesuksesan peternakan Anda. Mulai dari kemitraan domba hingga
-                        produksi pakan ternak berkualitas tinggi, kami berkomitmen untuk
-                        memberikan solusi terbaik bagi peternak. Dengan layanan yang unggul
-                        kami yang dapat membantu meningkatkan produktivitas dan efisiensi
-                        usaha peternakan Anda.
+                        {{ __('messages.serviceside') }}
                     </p>
                 </div>
             </div>

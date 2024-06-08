@@ -78,9 +78,12 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'en'),
+    // 'locale' => 'id',
+    // 'locale' => 'id',
 
-    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
+    'locale' => env('APP_LOCALE', 'id'),
+    'fallback_locale' => 'id',
+    // 'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
 
@@ -117,6 +120,12 @@ return [
     | Supported drivers: "file", "cache"
     |
     */
+
+    'aliases' => [
+        'App' => Illuminate\Support\Facades\App::class,
+        // alias lainnya...
+    ],
+
 
     'maintenance' => [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),

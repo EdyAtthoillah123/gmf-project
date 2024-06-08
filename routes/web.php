@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
+use App\Http\Controllers\LocaleController;
+ 
+Route::get('/locale/{locale}', [LocaleController::class, 'setLocale'])->name('locale');
 
 Route::view('/', 'welcome');
 
