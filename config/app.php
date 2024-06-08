@@ -78,10 +78,10 @@ return [
     |
     */
 
-    // 'locale' => 'id',
+    'locale' => 'id',
     // 'locale' => 'id',
 
-    'locale' => env('APP_LOCALE', 'id'),
+    // 'locale' => env('APP_LOCALE', 'id'),
     'fallback_locale' => 'id',
     // 'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
