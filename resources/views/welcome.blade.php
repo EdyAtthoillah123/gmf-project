@@ -94,11 +94,9 @@
                             <img class="h-auto" src="{{ asset('images/landingpage/layanan1.png') }}" alt="">
                         </div>
                         <div class="flex flex-col">
-                            <p class="text-title2 text-left text-dgreen mt-6 font-bold">Kemitraan Domba Gumukmas
-                                Multifarm (GMF)</p>
+                            <p class="text-title2 text-left text-dgreen mt-6 font-bold">{{ __('messages.service1') }}</p>
                             <p class="text-body text-tblack mt-4 leading-relaxed">
-                                Bersama GMF, raih peluang kemitraan dengan sistem yang transparan dan menguntungkan.
-                                Kami menyediakan bimbingan dan dukungan penuh untuk memastikan kesuksesan usaha Anda
+                                {{ __('messages.service1body') }}
                             </p>
                         </div>
                     </div>
@@ -111,11 +109,9 @@
                             <img class="h-auto" src="{{ asset('images/landingpage/layanan2.png') }}" alt="">
                         </div>
                         <div class="flex flex-col">
-                            <p class="text-title2 text-left text-dgreen mt-6 font-bold">Domba Pejantan & Indukan
-                                Kualitas Unggul</p>
+                            <p class="text-title2 text-left text-dgreen mt-6 font-bold">{{ __('messages.service2') }}</p>
                             <p class="text-body text-tblack mt-4 leading-relaxed">
-                                Kami menyediakan domba pejantan dan indukan unggul untuk mendukung program
-                                pengembangbiakan domba Anda. Kualitas ternak kami terjamin, sehat, dan produktif.
+                                {{ __('messages.service2body') }}
                             </p>
                         </div>
                     </div>
@@ -128,11 +124,9 @@
                             <img class="h-auto" src="{{ asset('images/landingpage/layanan3.png') }}" alt="">
                         </div>
                         <div class="flex flex-col">
-                            <p class="text-title2 text-left text-dgreen mt-6 font-bold">Pengadaan Bahan Baku Pakan
-                                Ternak</p>
+                            <p class="text-title2 text-left text-dgreen mt-6 font-bold">{{ __('messages.service3') }}</p>
                             <p class="text-body text-tblack mt-4 leading-relaxed">
-                                Dapatkan bahan baku pakan ternak terbaik dari kami. Kami menjamin kualitas dan ketepatan
-                                waktu pengiriman untuk memenuhi kebutuhan ternak Anda.
+                                {{ __('messages.service3body') }}
                             </p>
                         </div>
                     </div>
@@ -145,12 +139,9 @@
                             <img class="h-auto" src="{{ asset('images/landingpage/layanan4.png') }}" alt="">
                         </div>
                         <div class="flex flex-col">
-                            <p class="text-title2 text-left text-dgreen mt-6 font-bold">Produksi Pakan Ternak Ruminansia
-                                Kualitas Unggul</p>
+                            <p class="text-title2 text-left text-dgreen mt-6 font-bold">{{ __('messages.service4') }}</p>
                             <p class="text-body text-tblacks mt-4 leading-relaxed">
-                                Kami memproduksi pakan ternak ruminansia dengan formulasi yang optimal untuk kesehatan
-                                dan produktivitas ternak Anda. Produk kami terbuat dari bahan-bahan berkualitas tinggi
-                                dan sudah teruji.
+                                {{ __('messages.service4body') }}
                             </p>
                         </div>
                     </div>
@@ -165,15 +156,9 @@
         <div class="container mx-auto relative z-10">
             <div class="flex-1 flex items-center">
                 <div class="text-center mx-auto mt-8">
-                    <h1 class="text-h3 font-bold text-white xl:text-h2">Apa Kata Mereka</h1>
-                    <h1 class="text-h3 font-bold text-white xl:text-h2 mb-4">Tentang Gumukmas Multifarm ?</h1>
-                    <p class="text-body text-text text-white xl:text-title2">Dengarkan pengalaman para peternak yang
-                        telah
-                        merasakan
-                        manfaat dari kemitraan dengan Gumukmas Multifarm (GMF). Kami bangga dengan hubungan yang kami
-                        bangun dan hasil yang telah dicapai bersama mitra-mitra kami. Berikut adalah beberapa testimoni
-                        dari mereka yang telah bekerja sama dengan kami dan merasakan perbedaan nyata dalam usaha
-                        peternakan mereka.</p>
+                    <h1 class="text-h3 font-bold text-white xl:text-h2"> {{ __('messages.testimony') }}</h1>
+                    <h1 class="text-h3 font-bold text-white xl:text-h2 mb-4"> {{ __('messages.testimonybody') }}</h1>
+                    <p class="text-body text-text text-white xl:text-title2"> {{ __('messages.testimonydescription') }}</p>
                 </div>
             </div>
         </div>
