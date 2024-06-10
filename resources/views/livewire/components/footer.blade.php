@@ -4,9 +4,7 @@
             <!-- Column 1 -->
             <div class="flex flex-col items-start">
                 <img src="{{ asset('images/footer/logo.png') }}" class="w-24 h-24  mt-14 mb-6" alt="Image 1">
-                <p class="text-white text-title2 mb-6">Gumukmas Multifarm (GMF) adalah perusahaan yang berfokus pada
-                    kemitraan
-                    domba dan penyediaan pakan ternak ruminansia berkualitas tinggi yang berlokasi di Jember, Jawa Timur
+                <p class="text-white text-title2 mb-6">{{ __('messages.footerdescription') }}
                 </p>
                 <div class="flex space-x-4 mb-12">
                     <!-- Instagram Icon -->
@@ -41,27 +39,26 @@
             </div>
             <!-- Column 2 -->
             <div class="flex w-full flex-col items-center md:items-center mx-auto">
-                <p class="text-white text-title2 font-bold md:mt-14 md:mb-8 mb-6">Tautan Langsung</p>
+                <p class="text-white text-title2 font-bold md:mt-14 md:mb-8 mb-6">{{ __('messages.footerlink') }}</p>
                 <div class="w-full items-center">
                     <ul class="flex flex-col md:items-center">
-                        <li class="text-white text-title2 mb-6 mr-6 hover:font-bold"><a href="http://">Beranda</a></li>
-                        <li class="text-white text-title2 mb-6 mr-6 hover:font-bold"><a href="http://">Tentang</a></li>
-                        <li class="text-white text-title2 mb-6 mr-6 hover:font-bold"><a href="http://">Layanan</a></li>
-                        <li class="text-white text-title2 mb-6 mr-6 hover:font-bold"><a href="http://">Blog</a></li>
+                        <li class="text-white text-title2 mb-6 mr-6 hover:font-bold"><a href="http://">{{ __('messages.home') }}</a></li>
+                        <li class="text-white text-title2 mb-6 mr-6 hover:font-bold"><a href="http://">{{ __('messages.about') }}</a></li>
+                        <li class="text-white text-title2 mb-6 mr-6 hover:font-bold"><a href="http://">{{ __('messages.service') }}</a></li>
+                        <li class="text-white text-title2 mb-6 mr-6 hover:font-bold"><a href="http://">{{ __('messages.blog') }}</a></li>
                     </ul>
                 </div>
             </div>
             <!-- Column 3 -->
             <div class="flex flex-col items-center md:items-start">
-                <p class="text-white text-title2 font-bold md:mt-14 md:mb-8 mb-6">Informasi Kontak</p>
+                <p class="text-white text-title2 font-bold md:mt-14 md:mb-8 mb-6">{{ __('messages.footercontact') }}</p>
                 <ul>
                     <!-- Alamat dengan Ikon Maps -->
                     <li class="text-white text-title2 mb-6 flex items-start">
                         <!-- Image Maps -->
                         <img src="{{ asset('images/footer/maps.png') }}" class="h-4 w-4 mr-2 mt-1 align-self-center"
                             alt="Maps Icon">
-                        <a class="hover:font-bold" href="http://">Jalan Sultan Agung No. 42, Dusun Krajan, Desa Purwosari, Kec. Gumukmas, Kab.
-                            Jember, Jawa Timur, 68165</a>
+                        <a class="hover:font-bold" href="http://">{{ __('messages.footeraddress') }}</a>
                     </li>
 
                     <!-- Nomor Telepon 1 dengan Ikon Telepon -->
