@@ -32,5 +32,10 @@
         'footeraddress' => 'Jalan Sultan Agung No. 42, Dusun Krajan, Desa Purwosari, Kec. Gumukmas, Kab. Jember, Jawa Timur, 68165',
         'footercontact' => 'Informasi Kontak',
         'footerlink' => 'Tautan Langsung',
+
+        'partner' => 'Siap Memulai Kemitraan yang menguntungkan ?',
+        'partner2' => 'Hubungi Kami Sekarang ! ',
+        'partnerdescription' => 'Jangan tunda lagi untuk bergabung dengan Gumukmas Multifarm (GMF) dan nikmati berbagai keuntungan dari kemitraan bersama kami. Tim kami siap membantu Anda dalam setiap langkah untuk mencapai kesuksesan peternakan.',
+        'partneremail' => 'Masukkan Email',
     ];
 ?>

@@ -32,3 +32,34 @@ body {
     background-color: white;
     color: #FD7E0B;
 }
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease-out;
+}
+
+.carousel-item {
+    min-width: 32.58%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin-right: 15px; 
+}
+
+@media (max-width: 1024px) {
+    .carousel-item {
+        min-width: 50%;
+        margin-right: 0; 
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        min-width: 100%;
+        margin-right: 0; 
+    }
+}

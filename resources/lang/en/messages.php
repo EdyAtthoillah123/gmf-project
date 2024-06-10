@@ -32,5 +32,11 @@
         'footeraddress' => 'Sultan Agung Street No. 42, Krajan Hamlet, Purwosari Village, Gumukmas District, Jember Regency, East Java, 68165',
         'footercontact' => 'Contact Information',
         'footerlink' => 'Quick Links',
+
+        'partner' => 'Ready to Start a Profitable Partnership?',
+        'partner2' => 'Contact Us Now!',
+        'partnerdescription' => "Don't wait any longer to join Gumukmas Multifarm (GMF) and enjoy the many benefits of partnering with us. Our team is ready to assist you every step of the way to achieve farming success.",
+        'partneremail' => 'Enter Email',
+
     ];
 ?>
