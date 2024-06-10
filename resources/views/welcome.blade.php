@@ -269,6 +269,7 @@
     </section>
     {{-- End Section Testimonial --}}
 
+    {{-- Start Section Blog --}}
     <section id="blog" class="py-16 relative">
         <div class="container mx-auto relative z-10">
             <div class="flex items-center justify-center">
@@ -389,6 +390,7 @@
             </div>
         </div>
     </section>
+    {{-- Start Section Blog --}}
 
     <script>
         document.getElementById('prev-btn').addEventListener('click', function() {});

@@ -25,15 +25,19 @@
                         class="hidden absolute top-full left-0 w-48 bg-white shadow-md py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out group-hover:block">
                         <li>
                             <a class="block px-4 py-2 text-title2 text-dgreen hover:bg-gray-200"
-                                href="#service1">Service 1</a>
+                                href="#service1">Kemitraan Domba</a>
                         </li>
                         <li>
                             <a class="block px-4 py-2 text-title2 text-dgreen hover:bg-gray-200"
-                                href="#service2">Service 2</a>
+                                href="#service2">Penjualan Domba</a>
                         </li>
                         <li>
                             <a class="block px-4 py-2 text-title2 text-dgreen hover:bg-gray-200"
-                                href="#service3">Service 3</a>
+                                href="#service3">Bahan Baku Pakan</a>
+                        </li>
+                        <li>
+                            <a class="block px-4 py-2 text-title2 text-dgreen hover:bg-gray-200"
+                                href="#service3">Pakan Ruminansia</a>
                         </li>
                     </ul>
                 </li>
