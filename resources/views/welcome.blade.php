@@ -21,13 +21,13 @@
 
 <body class="bg-lwhite">
     <!-- Start Hero Section -->
-    <section id="hero" class="flex flex-col min-h-screen text-white bg-center bg-cover bg-blend-overlay "
+    <section id="hero" class="flex flex-col min-h-screen text-white bg-center bg-cover bg-blend-overlay"
         style="background-image: url('{{ asset('images/landingpage/herobackground.png') }}')">
         <div class="container">
             @livewire('components.header')
         </div>
         <div class="container">
-            <div class="mx-auto p-4 md:py-8">
+            <div class="mx-auto p-4 md:py-8 mt-24">
                 <div class="flex-1 flex items-center">
                     <div class="text-center mx-auto">
                         <h1 class="text-h3 font-bold text-white md:text-h2 lg:text-h1">{{ __('messages.welcome') }}</h1>

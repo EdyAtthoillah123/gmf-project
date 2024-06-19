@@ -1,4 +1,4 @@
-<header class="mt-7 mb-24">
+<header class="">
     <nav class="flex justify-between items-center w-full mx-auto py-3 relative">
         <div class="flex-1 flex justify-start">
             <a href="#" class="text-title1 text-dgreen font-bold text-center">Gumukmas Multifarm</a>
@@ -14,10 +14,10 @@
             class="hidden lg:flex lg:flex-row lg:items-center lg:gap-[4vw] flex-col items-center absolute lg:static top-16 left-0 w-full bg-lwhite/75 px-4 py-4 rounded-xl lg:bg-transparent z-10 lg:w-auto lg:flex-grow">
             <ul class="flex lg:flex-row flex-col lg:items-center gap-8 lg:flex-grow lg:justify-center">
                 <li>
-                    <a class="text-title2 text-dgreen hover:font-bold" href="#hero">{{ __('messages.home') }}</a>
+                    <a class="text-title2 text-dgreen hover:font-bold" href="{{ route('landingpage') }}">{{ __('messages.home') }}</a>
                 </li>
                 <li>
-                    <a class="text-title2 text-dgreen hover:font-bold" href="#about">{{ __('messages.about') }}</a>
+                    <a class="text-title2 text-dgreen hover:font-bold" href="{{ route('about') }}">{{ __('messages.about') }}</a>
                 </li>
                 <li class="group relative">
                     <a class="text-title2 text-dgreen hover:font-bold">{{ __('messages.service') }}</a>

@@ -6,7 +6,8 @@ use App\Http\Controllers\LocaleController;
  
 Route::get('/locale/{locale}', [LocaleController::class, 'setLocale'])->name('locale');
 
-Route::view('/', 'welcome');
+Route::view('/', 'welcome')->name('landingpage');
+Route::view('/about', 'about')->name('about');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
