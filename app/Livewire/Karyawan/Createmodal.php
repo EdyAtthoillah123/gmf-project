@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Livewire\Karyawan;
+
 use Livewire\Component;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -9,6 +10,7 @@ class Createmodal extends Component
 {
     public $name;
     public $email;
+    public $phone;
     public $address;
     public $password;
 
@@ -22,6 +24,7 @@ class Createmodal extends Component
         $validated = $this->validate([
             'name' => 'required|max:255',
             'email' => 'required|email|max:255',
+            'phone' => 'required|max:255',
             'address' => 'required|max:255',
             'password' => 'required|min:6',
         ]);
@@ -29,6 +32,7 @@ class Createmodal extends Component
         User::create([
             'name' => $validated['name'],
             'email' => $validated['email'],
+            'phone' => $validated['phone'],
             'address' => $validated['address'],
             'password' => Hash::make($validated['password']),
         ]);

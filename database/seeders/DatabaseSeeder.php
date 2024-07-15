@@ -13,11 +13,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(100)->create();
+        User::factory(2)->create();
 
         User::factory()->create([
             'name' => 'Gumukmas Admin',
             'email' => 'admin@gmail.com',
+            'phone' => '081144778856',
             'password' => '12345678',
             'address' => 'jl. Sultan Agung No.42, Dusun Krajan, Purwosari, Gumukmas, Jember'
         ]);
