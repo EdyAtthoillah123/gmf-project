@@ -21,6 +21,7 @@ class ChartsController extends Controller
                 'Humidity' => Humidity::where('id_alat', $id_alat)->limit(1)->latest()->get(),
                 'Temperature' => Temperature::where('id_alat', $id_alat)->limit(1)->latest()->get(),
                 'Amonia' => Amonia::where('id_alat', $id_alat)->limit(1)->latest()->get(),
+
             ];
         }
 
@@ -58,139 +59,118 @@ class ChartsController extends Controller
         return view('dashboard', $data);
     }
 
-    public function dioksida(Request $request, $id)
-    {
-        try {
-            $speeds = Dioksida::where('id_alat', $id)->latest()->take(30)->get()->sortBy('id_dioksida');
-            $labels = $speeds->pluck('created_at')->map(function ($date) {
-                return $date->format('H:i');
-            })->toArray();
-            $data = $speeds->pluck('nilai_dioksida')->toArray();
-
-            // Ambil 1 data terakhir
-            $latestData = Dioksida::latest()->first();
-
-            return response()->json([
-                'labels' => $labels,
-                'data' => $data,
-                'latest' => [
-                    'id_dioksida' => $latestData->id_dioksida,
-                    'nilai_dioksida' => $latestData->nilai_dioksida,
-                    'created_at' => $latestData->created_at,
-                    'updated_at' => $latestData->updated_at,
-                ],
-            ]);
-        } catch (\Exception $e) {
-            return response()->json(['error' => $e->getMessage()], 500);
-        }
-    }
-
     public function detaildashboard(Request $request, $id)
     {
         return view('dashboard/detaildashboard');
     }
 
-    public function metana(Request $request, $id)
+    public function chartamonia($id)
     {
-        try {
-            $speeds = Metana::where('id_alat', $id)->latest()->take(30)->get()->sortBy('id_metana');
-            $labels = $speeds->pluck('created_at')->map(function ($date) {
-                return $date->format('H:i');
-            })->toArray();
-            $data = $speeds->pluck('nilai_metana')->toArray();
+        // Fetch data based on $id
+        $data = Amonia::where('id_alat', $id)->latest()->take(30)->get()->sortBy('id_amonia');
 
-            $latestData = Metana::latest()->first();
+        // Process the data to be used in the chart
+        $labels = $data->pluck('created_at')->map(function ($date) {
+            return $date->format('H:i');
+        })->toArray();
 
-            return response()->json([
-                'labels' => $labels,
-                'data' => $data,
-                'latest' => [
-                    'id_metana' => $latestData->id_metana,
-                    'nilai_metana' => $latestData->nilai_metana,
-                    'created_at' => $latestData->created_at,
-                    'updated_at' => $latestData->updated_at,
-                ],
-            ]);
-        } catch (\Exception $e) {
-            return response()->json(['error' => $e->getMessage()], 500);
-        }
+        $amoniaValues = $data->pluck('nilai_amonia');
+
+        // Get the latest data
+        $latestData = $data->last();
+
+        return response()->json([
+            'labels' => $labels,
+            'data' => $amoniaValues,
+            'latest' => $latestData,
+        ]);
     }
 
-    public function humidity(Request $request, $id)
+    public function chartdioksida($id)
     {
-        try {
-            $speeds = Humidity::where('id_alat', $id)->latest()->take(30)->get()->sortBy('id_humidity');
-            $labels = $speeds->pluck('created_at')->map(function ($date) {
-                return $date->format('H:i');
-            })->toArray();
-            $data = $speeds->pluck('nilai_humidity')->toArray();
+        // Fetch data based on $id
+        $data = Dioksida::where('id_alat', $id)->latest()->take(30)->get()->sortBy('id_dioksida');
 
-            $latestData = Humidity::latest()->first();
+        // Process the data to be used in the chart
+        $labels = $data->pluck('created_at')->map(function ($date) {
+            return $date->format('H:i');
+        })->toArray();
 
-            return response()->json([
-                'labels' => $labels,
-                'data' => $data,
-                'latest' => [
-                    'id_humidity' => $latestData->id_humidity,
-                    'nilai_humidity' => $latestData->nilai_humidity,
-                    'created_at' => $latestData->created_at,
-                    'updated_at' => $latestData->updated_at,
-                ],
-            ]);
-        } catch (\Exception $e) {
-            return response()->json(['error' => $e->getMessage()], 500);
-        }
+        $dioksidaValues = $data->pluck('nilai_dioksida');
+
+        // Get the latest data
+        $latestData = $data->last();
+
+        return response()->json([
+            'labels' => $labels,
+            'data' => $dioksidaValues,
+            'latest' => $latestData,
+        ]);
     }
 
-    public function temperature(Request $request, $id)
+    public function chartmetana($id)
     {
-        try {
-            $speeds = Temperature::where('id_alat', $id)->latest()->take(30)->get()->sortBy('id_temp');
-            $labels = $speeds->pluck('created_at')->map(function ($date) {
-                return $date->format('H:i');
-            })->toArray();
-            $data = $speeds->pluck('nilai_suhu')->toArray();
+        // Fetch data based on $id
+        $data = Metana::where('id_alat', $id)->latest()->take(30)->get()->sortBy('id_metana');
 
-            $latestData = Temperature::latest()->first();
+        // Process the data to be used in the chart
+        $labels = $data->pluck('created_at')->map(function ($date) {
+            return $date->format('H:i');
+        })->toArray();
 
-            return response()->json([
-                'labels' => $labels,
-                'data' => $data,
-                'latest' => [
-                    'id_temp' => $latestData->id_temp,
-                    'nilai_suhu' => $latestData->nilai_suhu,
-                    'created_at' => $latestData->created_at,
-                    'updated_at' => $latestData->updated_at,
-                ],
-            ]);
-        } catch (\Exception $e) {
-            return response()->json(['error' => $e->getMessage()], 500);
-        }
+        $metanaValues = $data->pluck('nilai_metana');
+
+        // Get the latest data
+        $latestData = $data->last();
+
+        return response()->json([
+            'labels' => $labels,
+            'data' => $metanaValues,
+            'latest' => $latestData,
+        ]);
     }
 
-    public function amonia(Request $request, $id)
+    public function charttemperature($id)
     {
-        try {
-            $speeds = Amonia::where('id_alat', $id)->latest()->take(30)->get()->sortBy('id_amonia');
-            $labels = $speeds->pluck('created_at')->map(function ($date) {
-                return $date->format('H:i');
-            })->toArray();
-            $data = $speeds->pluck('nilai_amonia')->toArray();
+        // Fetch data based on $id
+        $data = Temperature::where('id_alat', $id)->latest()->take(30)->get()->sortBy('id_temp');
 
-            $latestData = Amonia::latest()->first();
+        // Process the data to be used in the chart
+        $labels = $data->pluck('created_at')->map(function ($date) {
+            return $date->format('H:i');
+        })->toArray();
 
-            return response()->json([
-                'labels' => $labels,
-                'data' => $data,
-                'latest' => [
-                    'id_amonia' => $latestData->id_amonia,
-                    'nilai_amonia' => $latestData->nilai_amonia,
-                    'created_at' => $latestData->created_at,
-                    'updated_at' => $latestData->updated_at,
-                ],
-            ]);
-        } catch (\Exception $e) {
-            return response()->json(['error' => $e->getMessage()], 500);
-        }
+        $temperatureValues = $data->pluck('nilai_suhu');
+
+        // Get the latest data
+        $latestData = $data->last();
+
+        return response()->json([
+            'labels' => $labels,
+            'data' => $temperatureValues,
+            'latest' => $latestData,
+        ]);
+    }
+
+    public function charthumidity($id)
+    {
+        // Fetch data based on $id
+        $data = Humidity::where('id_alat', $id)->latest()->take(30)->get()->sortBy('id_amonia');
+
+        // Process the data to be used in the chart
+        $labels = $data->pluck('created_at')->map(function ($date) {
+            return $date->format('H:i');
+        })->toArray();
+
+        $humidityValues = $data->pluck('nilai_humidity');
+
+        // Get the latest data
+        $latestData = $data->last();
+
+        return response()->json([
+            'labels' => $labels,
+            'data' => $humidityValues,
+            'latest' => $latestData,
+        ]);
     }
 }

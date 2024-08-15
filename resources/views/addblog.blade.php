@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>{{ isset($blog) ? 'Edit Blog' : 'Tambah Blog' }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.ckeditor.com/4.24.0-lts/standard/ckeditor.js"></script>
+    <link rel="stylesheet" href="../../assets/vendor/ckeditor5.css">
     @vite('resources/css/app.css')
     <style>
         body {
@@ -28,19 +28,23 @@
             <main class="flex-1 overflow-y-auto p-4">
                 <div class="bg-white shadow-lg rounded-lg mb-7">
                     <div class="flex justify-between items-center px-4 py-3 border-b border-gray-200 bg-gray-50">
-                        <h2 class="text-lg font-bold text-dgreen">Tambah Blog</h2>
+                        <h2 class="text-lg font-bold text-dgreen">{{ isset($blog) ? 'Edit Blog' : 'Tambah Blog' }}</h2>
                     </div>
                     <div class="px-4 pb-4">
                         <div class="overflow-x-auto mt-4">
-                            <!-- Livewire Component untuk menampilkan data karyawan -->
                             <form name="add-blog-post-form" id="add-blog-post-form" method="post"
-                                action="{{ url('addblog') }}">
+                                action="{{ isset($blog) ? route('blog.update', $blog->id) : route('blog.store') }}"
+                                enctype="multipart/form-data">
                                 @csrf
+                                @if (isset($blog))
+                                    @method('PUT')
+                                @endif
+
                                 <div class="form-group space-y-2 md:space-y-4 mb-4">
                                     <label class="block text-sm font-medium text-gray-700">Judul</label>
                                     <input type="text" id="judul" name="judul"
                                         class="form-control w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                        required>
+                                        value="{{ old('judul', $blog->judul_blog ?? '') }}" required>
                                 </div>
                                 <div class="form-group space-y-2 md:space-y-4 mb-7">
                                     <div class="flex flex-wrap -mx-3">
@@ -50,10 +54,12 @@
                                                 class="form-control w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                                 required>
                                                 <option value="" disabled selected>Pilih Kategori</option>
-                                                <option value="kategori1">Kategori 1</option>
-                                                <option value="kategori2">Kategori 2</option>
-                                                <option value="kategori3">Kategori 3</option>
-                                                <!-- Add more options as needed -->
+                                                @foreach ($categories as $category)
+                                                    <option value="{{ $category->id }}"
+                                                        {{ isset($blog) && $blog->id_kategori == $category->id ? 'selected' : '' }}>
+                                                        {{ $category->nama_kategori }}
+                                                    </option>
+                                                @endforeach
                                             </select>
                                         </div>
                                         <div class="w-full md:w-1/2 px-3">
@@ -63,46 +69,46 @@
                                                 <label class="block">
                                                     <span class="sr-only">Choose file</span>
                                                     <input type="file" id="image-upload" name="image-upload"
-                                                        class="hidden" accept="image/*" required>
+                                                        class="hidden" accept="image/*">
                                                 </label>
                                                 <button type="button"
                                                     onclick="document.getElementById('image-upload').click()"
-                                                    class="px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Pilih
-                                                    Gambar</button>
+                                                    class="px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                                    Pilih Gambar
+                                                </button>
                                                 <span id="file-name" class="ml-3 text-sm text-gray-600">Tidak ada file
                                                     yang dipilih</span>
                                             </div>
+                                            @if (isset($blog))
+                                                <img src="{{ asset('storage/thumbnails/' . $blog->thumbnail) }}"
+                                                    alt="Thumbnail" style="width: 174px; height: 110px;"
+                                                    class="w-full h-64 object-cover mt-4">
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <div class="form-group space-y-2 md:space-y-4 mb-7">
                                     <label for="blog-content"
                                         class="block text-sm font-medium text-gray-700">Deskripsi</label>
-                                    <textarea id="blog-content" name="blog-content" rows="10"
+                                    <textarea id="editor" name="blog-content" rows="10"
                                         class="form-control w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                        required></textarea>
-                                    <script>
-                                        CKEDITOR.replace('editor1');
-                                    </script>
+                                        required>{{ old('blog-content', $blog->deskripsi ?? '') }}</textarea>
                                 </div>
-
                                 <div class="flex justify-end mt-4">
-                                    <button
-                                        class="bg-dgreen hover:bg-dgreen text-white font-semibold py-2 px-4 rounded-lg inline-flex items-center"
-                                        data-modal-target="default-modal" data-modal-toggle="default-modal">
-                                        <span class="inline-block">Tambah Blog</span>
+                                    <button type="submit"
+                                        class="bg-dgreen hover:bg-dgreen text-white font-semibold py-2 px-4 rounded-lg inline-flex items-center">
+                                        <span
+                                            class="inline-block">{{ isset($blog) ? 'Update Blog' : 'Tambah Blog' }}</span>
                                     </button>
                                 </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
             </main>
-
             <!-- Footer -->
             @livewire('partials.footer')
-
             <!-- Logout form (hidden by default) -->
             <form id="logout-form" action="#" method="POST" style="display: none;">
                 @csrf
@@ -111,13 +117,15 @@
         </div>
     </div>
     @vite('resources/js/app.js')
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('editor');
+
+        document.getElementById('image-upload').addEventListener('change', function(event) {
+            const fileName = event.target.files[0] ? event.target.files[0].name : 'Tidak ada file yang dipilih';
+            document.getElementById('file-name').textContent = fileName;
+        });
+    </script>
 </body>
 
 </html>
-
-<script>
-    document.getElementById('image-upload').addEventListener('change', function() {
-        const fileName = this.files[0] ? this.files[0].name : 'Tidak ada file yang dipilih';
-        document.getElementById('file-name').textContent = fileName;
-    });
-</script>

@@ -56,10 +56,21 @@
                             <h6 class="m-0 font-semibold text-gray-700">Dashboard</h6>
                         </div>
                         <div class="px-8 py-8">
+                            <h6 class="text-right text-gray-700 text-md font-semibold">
+                                Terakhir di Update:
+                                @if ($Temperature1->isNotEmpty())
+                                    @foreach ($Temperature1 as $temperature)
+                                        <!-- Format the created_at date using Carbon -->
+                                        {{ $temperature->created_at->format('d M Y H:i') }}
+                                    @endforeach
+                                @else
+                                    <p class="text-red-500">No data available.</p>
+                                @endif
+                            </h6>
                             <div class="grid grid-cols-2 gap-4">
                                 <a href="{{ route('detail.dashboard1', ['id' => 1]) }}" class="col-span-1">
-                                    <div
-                                        class="bg-dgreen h-full px-8 rounded-lg shadow-lg flex flex-col justify-center items-center">
+                                    <div class="bg-dgreen h-full px-8 rounded-lg shadow-lg flex flex-col justify-center items-center"
+                                        style="background-image: url('{{ asset('images/footer/footer.png') }}">
                                         <div class="w-full mb-6 items-center mt-4">
                                             <p class="text-white text-lg font-bold">Lokasi Alat 1</p>
                                             <p class="text-white text-sm font-bold">Keterangan Lokasi:</p>
@@ -101,7 +112,7 @@
                                         <div class="w-full mb-6">
                                             <div class="flex justify-between">
                                                 <div class="flex w-full">
-                                                    <p class="text-white text-md font-bold w-1/3">Ammonia</p>
+                                                    <p class="text-white text-md font-bold w-1/3">Amonia</p>
                                                     <p class="text-white text-md font-bold w-1/6">:</p>
                                                     <p class="text-white text-md font-bold w-1/2">
                                                         @if ($Amonia1->isNotEmpty())
@@ -109,7 +120,7 @@
                                                                 {{ $amonia->nilai_amonia }}
                                                             @endforeach
                                                         @else
-                                                            <p class="text-red-500">No Ammonia data available.</p>
+                                                            <p class="text-red-500">No Amonia data available.</p>
                                                         @endif
                                                     </p>
                                                 </div>
@@ -153,8 +164,8 @@
                                 </a>
 
                                 <a href="{{ route('detail.dashboard2', ['id' => 2]) }}" class="col-span-1">
-                                    <div
-                                        class="bg-dgreen h-full px-8 rounded-lg shadow-lg flex flex-col justify-center items-center">
+                                    <div class="bg-dgreen h-full px-8 rounded-lg shadow-lg flex flex-col justify-center items-center"
+                                        style="background-image: url('{{ asset('images/footer/footer.png') }}">
                                         <div class="w-full mb-6 items-center mt-4">
                                             <p class="text-white text-lg font-bold">Lokasi Alat 2</p>
                                             <p class="text-white text-sm font-bold">Keterangan Lokasi:</p>
@@ -196,7 +207,7 @@
                                         <div class="w-full mb-6">
                                             <div class="flex justify-between">
                                                 <div class="flex w-full">
-                                                    <p class="text-white text-md font-bold w-1/3">Ammonia</p>
+                                                    <p class="text-white text-md font-bold w-1/3">Amonia</p>
                                                     <p class="text-white text-md font-bold w-1/6">:</p>
                                                     <p class="text-white text-md font-bold w-1/2">
                                                         @if ($Amonia2->isNotEmpty())
@@ -204,7 +215,7 @@
                                                                 {{ $amonia->nilai_amonia }}
                                                             @endforeach
                                                         @else
-                                                            <p class="text-red-500">No Ammonia data available.</p>
+                                                            <p class="text-red-500">No Amonia data available.</p>
                                                         @endif
                                                     </p>
                                                 </div>
@@ -249,8 +260,8 @@
                             </div>
                             <div class="grid grid-cols-2 gap-4 mt-4">
                                 <a href="{{ route('detail.dashboard3', ['id' => 3]) }}" class="col-span-1">
-                                    <div
-                                        class="bg-dgreen h-full px-8 rounded-lg shadow-lg flex flex-col justify-center items-center">
+                                    <div class="bg-dgreen h-full px-8 rounded-lg shadow-lg flex flex-col justify-center items-center"
+                                        style="background-image: url('{{ asset('images/footer/footer.png') }}">
                                         <div class="w-full mb-6 items-center mt-4">
                                             <p class="text-white text-lg font-bold">Lokasi Alat 3</p>
                                             <p class="text-white text-sm font-bold">Keterangan Lokasi:</p>
@@ -292,7 +303,7 @@
                                         <div class="w-full mb-6">
                                             <div class="flex justify-between">
                                                 <div class="flex w-full">
-                                                    <p class="text-white text-md font-bold w-1/3">Ammonia</p>
+                                                    <p class="text-white text-md font-bold w-1/3">Amonia</p>
                                                     <p class="text-white text-md font-bold w-1/6">:</p>
                                                     <p class="text-white text-md font-bold w-1/2">
                                                         @if ($Amonia3->isNotEmpty())
@@ -300,7 +311,7 @@
                                                                 {{ $amonia->nilai_amonia }}
                                                             @endforeach
                                                         @else
-                                                            <p class="text-red-500">No Ammonia data available.</p>
+                                                            <p class="text-red-500">No Amonia data available.</p>
                                                         @endif
                                                     </p>
                                                 </div>
@@ -343,7 +354,8 @@
                                     </div>
                                 </a>
                                 <a href="{{ route('detail.dashboard4', ['id' => 4]) }}" class="col-span-1">
-                                    <div class="bg-dgreen h-full px-8 rounded-lg shadow-lg flex flex-col justify-center items-center">
+                                    <div class="bg-dgreen h-full px-8 rounded-lg shadow-lg flex flex-col justify-center items-center"
+                                        style="background-image: url('{{ asset('images/footer/footer.png') }}">
                                         <div class="w-full mb-6 items-center mt-4">
                                             <p class="text-white text-lg font-bold">Lokasi Alat 4</p>
                                             <p class="text-white text-sm font-bold">Keterangan Lokasi:</p>
@@ -385,7 +397,7 @@
                                         <div class="w-full mb-6">
                                             <div class="flex justify-between">
                                                 <div class="flex w-full">
-                                                    <p class="text-white text-md font-bold w-1/3">Ammonia</p>
+                                                    <p class="text-white text-md font-bold w-1/3">Amonia</p>
                                                     <p class="text-white text-md font-bold w-1/6">:</p>
                                                     <p class="text-white text-md font-bold w-1/2">
                                                         @if ($Amonia4->isNotEmpty())
@@ -393,7 +405,7 @@
                                                                 {{ $amonia->nilai_amonia }}
                                                             @endforeach
                                                         @else
-                                                            <p class="text-red-500">No Ammonia data available.</p>
+                                                            <p class="text-red-500">No Amonia data available.</p>
                                                         @endif
                                                     </p>
                                                 </div>
